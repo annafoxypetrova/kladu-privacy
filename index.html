@@ -7,100 +7,215 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #111;
-      color: #e0e0e0;
-      line-height: 1.7;
-      padding: 40px 20px 80px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0f0f0f;
+      color: #d4d4d4;
+      line-height: 1.75;
+      padding: 48px 20px 100px;
     }
-    .container { max-width: 720px; margin: 0 auto; }
-    h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; color: #fff; }
-    .subtitle { color: #888; font-size: 0.9rem; margin-bottom: 48px; }
+    .container { max-width: 740px; margin: 0 auto; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    h1 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .updated { color: #666; font-size: 0.875rem; margin-bottom: 40px; }
+    .intro {
+      background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 10px;
+      padding: 20px 24px; margin-bottom: 40px; color: #bbb; font-size: 0.95rem;
+    }
     h2 {
-      font-size: 1.15rem; font-weight: 600; color: #fff;
-      margin-top: 40px; margin-bottom: 12px;
-      padding-bottom: 8px; border-bottom: 1px solid #2a2a2a;
+      font-size: 1.1rem; font-weight: 600; color: #fff;
+      margin-top: 44px; margin-bottom: 14px;
+      padding-bottom: 10px; border-bottom: 1px solid #222;
     }
-    p { margin-bottom: 12px; color: #ccc; }
-    ul { padding-left: 20px; margin-bottom: 12px; }
-    li { margin-bottom: 6px; color: #ccc; }
+    p { margin-bottom: 14px; color: #bbb; font-size: 0.95rem; }
+    ul { padding-left: 22px; margin-bottom: 14px; }
+    li { margin-bottom: 8px; color: #bbb; font-size: 0.95rem; }
+    strong { color: #e0e0e0; }
     a { color: #5ba4f5; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .badge {
-      display: inline-block; background: #1a1a2e; border: 1px solid #2a2a4a;
-      color: #5ba4f5; padding: 2px 10px; border-radius: 20px;
-      font-size: 0.8rem; margin-bottom: 48px;
+    .permission-block {
+      background: #161616; border: 1px solid #252525; border-radius: 8px;
+      padding: 14px 18px; margin-bottom: 10px;
     }
+    .permission-block .perm-title { color: #e0e0e0; font-weight: 600; font-size: 0.95rem; }
+    .permission-block .perm-desc { color: #999; font-size: 0.875rem; margin-top: 4px; }
+    .contact-box {
+      background: #161616; border: 1px solid #252525; border-radius: 10px;
+      padding: 20px 24px; margin-top: 16px;
+    }
+    .contact-box p { margin: 0; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; text-align: center; }
   </style>
 </head>
 <body>
   <div class="container">
+
+    <div class="logo">Kladu</div>
     <h1>Политика конфиденциальности</h1>
-    <p class="subtitle">Последнее обновление: март 2026</p>
-    <span class="badge">Kladu — iOS App</span>
+    <p class="updated">Последнее обновление: 24 марта 2026 г.</p>
 
-    <h2>1. Общие положения</h2>
+    <div class="intro">
+      Настоящая Политика конфиденциальности описывает, какие данные собирает приложение Kladu,
+      как они используются и какими правами вы располагаете. Используя приложение, вы соглашаетесь
+      с условиями этой политики.
+    </div>
+
+    <!-- 1 -->
+    <h2>1. Кто мы</h2>
     <p>
-      Kladu («мы», «приложение») уважает вашу конфиденциальность. Настоящая политика описывает,
-      какие данные мы собираем, как используем и как вы можете управлять ими.
+      Kladu — мобильное приложение для iOS, позволяющее создавать проекты, добавлять карточки
+      с текстом, изображениями, голосовыми заметками и ссылками, а также получать помощь
+      искусственного интеллекта при работе с контентом.
     </p>
+    <p>По вопросам конфиденциальности: <a href="mailto:hello@kladu.app">hello@kladu.app</a></p>
 
+    <!-- 2 -->
     <h2>2. Какие данные мы собираем</h2>
+    <p><strong>Данные аккаунта</strong></p>
     <ul>
-      <li><strong>Аккаунт:</strong> адрес электронной почты и идентификатор Apple ID (при входе через Apple Sign In).</li>
-      <li><strong>Контент:</strong> проекты, карточки, изображения, голосовые заметки и файлы, которые вы создаёте в приложении.</li>
-      <li><strong>Telegram:</strong> если вы подключаете Telegram-бота, мы сохраняем ваш Telegram user ID для доставки сообщений.</li>
-      <li><strong>Технические данные:</strong> мы не собираем аналитику, данные об устройстве или геолокацию.</li>
+      <li>Адрес электронной почты</li>
+      <li>Идентификатор Apple ID (при входе через Sign in with Apple)</li>
+    </ul>
+    <p><strong>Контент, который вы создаёте</strong></p>
+    <ul>
+      <li>Проекты и карточки (текст, заголовки, описания)</li>
+      <li>Изображения, добавленные через камеру или галерею</li>
+      <li>Голосовые заметки (аудиозаписи)</li>
+      <li>Файлы и ссылки</li>
+    </ul>
+    <p><strong>Telegram-интеграция (опционально)</strong></p>
+    <ul>
+      <li>Telegram user ID — только если вы самостоятельно подключили Telegram-бота Kladu</li>
+    </ul>
+    <p><strong>Что мы НЕ собираем</strong></p>
+    <ul>
+      <li>Геолокацию</li>
+      <li>Данные об устройстве или рекламные идентификаторы</li>
+      <li>Аналитику поведения или трекинг</li>
+      <li>Данные из контактов или других приложений</li>
     </ul>
 
+    <!-- 3 -->
     <h2>3. Разрешения устройства</h2>
-    <ul>
-      <li><strong>Камера</strong> — для фотографирования и добавления изображений в проекты.</li>
-      <li><strong>Галерея (Фото)</strong> — для выбора изображений из библиотеки.</li>
-      <li><strong>Микрофон</strong> — для записи голосовых заметок.</li>
-    </ul>
-    <p>Разрешения запрашиваются только в момент использования соответствующих функций. Вы можете отозвать их в настройках iOS.</p>
+    <p>Приложение запрашивает следующие разрешения — только в момент использования соответствующих функций:</p>
 
-    <h2>4. Как мы используем данные</h2>
-    <ul>
-      <li>Для предоставления функций приложения (хранение и синхронизация контента).</li>
-      <li>Для доставки сообщений через Telegram-бота (только если вы подключили интеграцию).</li>
-      <li>Мы не продаём и не передаём ваши данные третьим лицам в рекламных целях.</li>
-    </ul>
+    <div class="permission-block">
+      <div class="perm-title">📷 Камера</div>
+      <div class="perm-desc">Для фотографирования и добавления снимков в карточки проектов.</div>
+    </div>
+    <div class="permission-block">
+      <div class="perm-title">🖼 Галерея (Фото)</div>
+      <div class="perm-desc">Для выбора изображений из библиотеки устройства.</div>
+    </div>
+    <div class="permission-block">
+      <div class="perm-title">🎙 Микрофон</div>
+      <div class="perm-desc">Для записи голосовых заметок внутри карточек.</div>
+    </div>
 
-    <h2>5. Хранение данных</h2>
-    <p>
-      Данные хранятся на серверах <a href="https://supabase.com/privacy" target="_blank">Supabase</a>
-      (PostgreSQL + Object Storage). Supabase соответствует требованиям GDPR.
-      Серверы расположены в регионе EU (West).
+    <p style="margin-top:16px;">
+      Вы можете отозвать любое разрешение в любой момент:
+      <strong>Настройки iOS → Конфиденциальность → [название разрешения] → Kladu</strong>.
+      Отзыв разрешения отключит соответствующую функцию приложения.
     </p>
 
-    <h2>6. Удаление аккаунта и данных</h2>
+    <!-- 4 -->
+    <h2>4. Как мы используем ваши данные</h2>
+    <ul>
+      <li>Для предоставления функций приложения: хранение, синхронизация и отображение вашего контента</li>
+      <li>Для работы AI-функций: обработка содержимого карточек с целью генерации подсказок (данные не передаются третьим лицам для обучения моделей)</li>
+      <li>Для работы Telegram-интеграции: доставка сообщений через бота, если вы её подключили</li>
+      <li>Для связи с вами по запросам поддержки</li>
+    </ul>
+    <p><strong>Мы не продаём ваши данные.</strong> Мы не используем ваши данные в рекламных целях и не передаём их третьим лицам без вашего согласия.</p>
+
+    <!-- 5 -->
+    <h2>5. Где хранятся данные</h2>
     <p>
-      Вы можете полностью удалить свой аккаунт и все связанные данные прямо в приложении:
+      Все данные хранятся на серверах <a href="https://supabase.com/privacy" target="_blank">Supabase</a> —
+      платформы, соответствующей требованиям GDPR. Серверы расположены в регионе ЕС (eu-west).
+    </p>
+    <p>
+      Supabase является обработчиком данных (Data Processor) и обязана соблюдать
+      конфиденциальность в соответствии с соглашением об обработке данных (DPA).
+    </p>
+
+    <!-- 6 -->
+    <h2>6. Передача данных третьим лицам</h2>
+    <p>Мы взаимодействуем только со следующими сервисами:</p>
+    <ul>
+      <li><strong>Supabase</strong> — база данных, аутентификация, хранилище файлов: <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></li>
+      <li><strong>Telegram API</strong> — только если вы подключили Telegram-интеграцию: <a href="https://telegram.org/privacy" target="_blank">telegram.org/privacy</a></li>
+    </ul>
+    <p>Мы не используем сторонние рекламные сети, аналитические SDK или трекеры.</p>
+
+    <!-- 7 -->
+    <h2>7. Срок хранения данных</h2>
+    <p>
+      Ваши данные хранятся до тех пор, пока существует ваш аккаунт.
+      При удалении аккаунта все данные удаляются немедленно и безвозвратно.
+    </p>
+
+    <!-- 8 -->
+    <h2>8. Удаление аккаунта и данных</h2>
+    <p>
+      Вы можете удалить аккаунт и все связанные данные прямо в приложении:
       <strong>Профиль → Удалить аккаунт</strong>.
     </p>
+    <p>При удалении аккаунта безвозвратно удаляется:</p>
+    <ul>
+      <li>Все проекты и карточки</li>
+      <li>Все изображения, голосовые записи и файлы</li>
+      <li>Telegram-интеграция</li>
+      <li>Данные аккаунта (email, идентификаторы)</li>
+    </ul>
+
+    <!-- 9 -->
+    <h2>9. Ваши права</h2>
+    <p>Вы имеете право:</p>
+    <ul>
+      <li><strong>Доступ:</strong> запросить копию ваших данных</li>
+      <li><strong>Исправление:</strong> исправить неточные данные</li>
+      <li><strong>Удаление:</strong> удалить аккаунт и все данные (через приложение или по запросу)</li>
+      <li><strong>Отзыв согласия:</strong> отозвать разрешения устройства через настройки iOS</li>
+    </ul>
+    <p>Для любых запросов пишите на <a href="mailto:hello@kladu.app">hello@kladu.app</a>. Мы ответим в течение 30 дней.</p>
+
+    <!-- 10 -->
+    <h2>10. Дети</h2>
     <p>
-      При удалении аккаунта удаляются: все проекты, карточки, изображения, голосовые записи,
-      файлы, Telegram-интеграция и учётные данные.
+      Приложение не предназначено для детей до 13 лет. Мы осознанно не собираем данные
+      пользователей младше этого возраста. Если вы считаете, что ребёнок предоставил нам
+      свои данные, пожалуйста, свяжитесь с нами — мы немедленно удалим эту информацию.
     </p>
 
-    <h2>7. Дети</h2>
+    <!-- 11 -->
+    <h2>11. Безопасность</h2>
     <p>
-      Приложение не предназначено для детей до 13 лет. Мы не собираем осознанно данные
-      пользователей младше этого возраста.
+      Мы применяем стандартные меры защиты: шифрование данных при передаче (TLS),
+      шифрование хранилища, контроль доступа и аутентификацию. Тем не менее ни один
+      способ передачи данных через интернет не является абсолютно защищённым.
     </p>
 
-    <h2>8. Изменения политики</h2>
+    <!-- 12 -->
+    <h2>12. Изменения политики</h2>
     <p>
-      Мы можем обновлять эту политику. При существенных изменениях уведомим вас через приложение.
-      Дата последнего обновления указана в начале страницы.
+      Мы можем обновлять эту политику. Дата последнего обновления указана в начале страницы.
+      При существенных изменениях мы уведомим вас через приложение или по электронной почте.
+      Продолжение использования приложения после обновления означает принятие новой версии политики.
     </p>
 
-    <h2>9. Контакт</h2>
-    <p>
-      Вопросы по конфиденциальности: <a href="mailto:hello@kladu.app">hello@kladu.app</a>
-    </p>
+    <!-- 13 -->
+    <h2>13. Контакт</h2>
+    <div class="contact-box">
+      <p>По вопросам конфиденциальности и обработки данных:</p>
+      <p style="margin-top:10px;">
+        ✉️ <a href="mailto:hello@kladu.app">hello@kladu.app</a>
+      </p>
+    </div>
+
+    <footer>
+      © 2026 Kladu. Все права защищены.
+    </footer>
+
   </div>
 </body>
 </html>
